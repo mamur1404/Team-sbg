@@ -1,7 +1,7 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --body: #151437;
-        --text: #fff;
+        --txt: #fff;
         --dots: #ebebeb;
         --title-tab: #151437;
         --footer-link: #fff;

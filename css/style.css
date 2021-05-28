@@ -37,3 +37,95 @@ p {
 .logo::before {
     content: url(../img/svg/logo-light.svg);
 }
+
+.all-btn {
+    background: var(--btn);
+    box-shadow: 0px 0px 5px 1px rgba(113, 119, 241, 0.5);
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px 0;
+    display: block;
+    transition: .4s;
+    color: #fff !important;
+}  
+
+.all-btn:hover {
+    background: #fff;
+    color: var(--btn) !important;
+}
+
+/* header start */
+
+.header__list {
+    column-gap: 30px;
+    row-gap: 15px;
+}
+
+.header__link {
+    font-size: 24px;
+    color: var(--link);
+    text-transform: capitalize;
+    line-height: 16px;
+    transition: .5s;
+}
+
+.header__link:hover {
+    color: var(--txt);
+}
+
+.header__link-btn {
+    width: 190px;
+}
+
+.header__menu {
+    width: 44px;
+    height: 2px;
+    border: none;
+    position: relative;
+    padding: 0;
+}
+
+.header__menu:focus {
+    box-shadow: unset;
+}
+
+.header__menu.collapsed {
+    background: var(--txt);
+    transition: .4s;
+}
+
+.header__menu::before,
+.header__menu::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: var(--txt);
+    transition: .4s;
+}
+
+.header__menu::after {
+    top: 10px;
+}
+
+.header__menu:not(.collapsed)::before {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+.header__menu:not(.collapsed)::after {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+
+
+
+
+
+
+
+
+/* header end */
