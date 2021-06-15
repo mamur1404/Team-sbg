@@ -24,3 +24,14 @@
         transform: translateX(-50%);
     }
 }
+
+@media(max-width: 576px) {
+    .header__nav::before,
+    .header__nav::after, 
+    .header__content::before,
+    .header__content::after,
+    .capabilities .container::before,
+    .capabilities .container::after {
+        display: none;
+    }
+}
