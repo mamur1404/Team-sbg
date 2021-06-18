@@ -12,6 +12,7 @@
     }
 }
 @media (max-width: 1440px) {
+    .works::before,
     .about::after {
         display: none;
     }

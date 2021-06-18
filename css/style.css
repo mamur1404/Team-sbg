@@ -446,6 +446,44 @@ p {
 /* works start */
 .works {
     padding-bottom: 220px;
+    position: relative;
+}
+
+.works::before {
+    content: url(../img/svg/figure_2.svg);
+    position: absolute;
+    top: -35%;
+    left: 0;
+    z-index: -1;
+}
+
+.works .container {
+    position: relative;
+}
+
+.works .container::before {
+    content: '';
+    position: absolute;
+    width: 7vw;
+    height: 7.5vw;
+    top: 75%;
+    border: .3vw solid #7177f1;
+    border-radius: 50%;
+    z-index: -1;
+    animation: rotate 5s linear infinite alternate;
+    left: 20%;
+}
+
+.works .container::after {
+    content: '';
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+    top: 100%;
+    border: .3vw solid #7177f1;
+    z-index: -1;
+    animation: rotate 5s linear infinite alternate;
+    right: 0;
 }
 
 
@@ -464,7 +502,7 @@ p {
     font-weight: 600;
     font-size: 18px;
     text-transform: uppercase;
-    padding: 20px;
+    padding: 16.5px;
     transition: .4s;
     border: none;
 }
@@ -492,6 +530,7 @@ p {
     max-height: 320px;
     object-fit: cover;
     border-radius: 8px;
+    object-position: top;
 }
 
 .works__tab-desc {
@@ -519,3 +558,22 @@ p {
 }
 
 /* works end */
+
+/* footer start */
+
+.footer {
+    padding: 130px;
+}
+
+.footer__link, .footer__contact {
+    font-size: 24px;
+    color: var(--footer-link);
+}
+
+.footer__link:hover, .footer__contact:hover {
+    color: var(--footer-link);
+    text-decoration: underline;
+}
+
+
+/* footer end */
